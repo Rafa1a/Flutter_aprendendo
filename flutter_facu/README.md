@@ -1,4 +1,4 @@
-### Documentação : Aplicativo de Viagens
+# Documentação : Aplicativo de Viagens
 
 ## Descrição
 Este é um aplicativo de viagens construído com Flutter. Ele apresenta uma lista de destinos de viagem, uma tela de contatos e uma tela "Sobre".
@@ -6,16 +6,16 @@ Este é um aplicativo de viagens construído com Flutter. Ele apresenta uma list
 ## Estrutura do Código
 O aplicativo é composto por várias classes e arquivos:
 
-## main.dart
+### main.dart
 Este é o ponto de entrada do aplicativo. Ele define a classe MyApp, que é um widget sem estado. MyApp define uma lista de telas (BodyContent, Contatos e Sobre) e constrói um MaterialApp com um DefaultTabController.
 
-## BodyContent.dart
+### BodyContent.dart
 Este arquivo define a classe BodyContent, que é um widget sem estado. BodyContent recebe uma lista de objetos Travel e constrói uma lista de destinos de viagem.
 
-## Contatos.dart
+### Contatos.dart
 Este arquivo define a classe Contatos, que é um widget sem estado. Contatos constrói uma tela de contatos.
 
-## Sobre.dart
+### Sobre.dart
 Este arquivo define a classe Sobre, que é um widget sem estado. Sobre constrói uma tela "Sobre".
 
 ## Funcionalidades

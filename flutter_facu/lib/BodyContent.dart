@@ -7,15 +7,13 @@ class Travel {
   final String image;
   final String title;
   final String sub_title;
-  // final String description;
-  // final int starCount;
+  final String descricao;
 
   Travel({
     required this.image,
     required this.title,
     required this.sub_title,
-    // required this.description,
-    // required this.starCount,
+    required this.descricao,
   });
 }
 
@@ -48,19 +46,19 @@ class BodyContent extends StatelessWidget {
                     ),
                     TitleSection(title: travel.title, subTitle: travel.sub_title),
                     const ButtonSection(),
-                    TextSection(),
+                    TextSection(descricao: travel.descricao,),
                   ],
                 ),
               ),
-            );  
+            );
           },
         ),
-        Positioned(  // Adicione este widget
-          right: 10,  // Ajuste a posição conforme necessário
-          top: 120,  // Ajuste a posição conforme necessário
-          child: FloatingActionButton(  // Adicione este widget
+        Positioned(
+          right: 10,
+          top: 120,
+          child: FloatingActionButton(
             onPressed: () {
-              // Adicione a ação do botão aqui
+              print('FAB clicked');
             },
             child: Icon(Icons.arrow_forward),
           ),

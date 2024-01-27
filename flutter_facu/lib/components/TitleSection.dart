@@ -20,15 +20,15 @@ class TitleSection extends StatelessWidget {
               children: [
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
-                  child: const Text(
-                    'Oeschinen rafa Campground',
+                  child: Text(  // Removed 'const' here
+                    title,
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ),
-                Text(
-                  'Kandersteg, Switzerland',
+                Text(  // Removed 'const' here
+                  subTitle,
                   style: TextStyle(
                     color: Colors.grey[500],
                   ),
